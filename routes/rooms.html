@@ -1,0 +1,45 @@
+<section id="imagetoprooms">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 imageundernavroom">
+                <h1>LE NOSTRE CAMERE</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid">
+    <div class="row m-4">
+        <div class="card col-md-4 mt-4 deluxeCard">
+            <a ng-class="{ active: isActive('/rooms/deluxe')}" href="#!rooms/deluxe"><img class="card-img-top" src="./assets/images/deluxe.jpg" alt="deluxeRoom.jpg"></a>
+            <div class="card-body">
+                <h5 class="card-title text-success text-center">Deluxe</h5>
+                <div class="text-center m-3">
+                <a href="#!rooms/deluxe" ng-class="{ active: isActive('/rooms/deluxe')}" class="btn btn-white border-dark">Dettagli</a>
+                </div>
+                <p class="card-text text-center"><small class="text-muted">Camera doppia, perfetta per la coppia.</small></p>
+            </div>
+        </div>
+        <div class="card col-md-4 spCard">
+            <a ng-class="{ active: isActive('/rooms/superiorplus')}" href="#!rooms/superiorplus"><img class="card-img-top" src="./assets/images/superiorplusbed3.jpg" alt="superiorPlusRoom.jpg"></a>
+            <div class="card-body">
+                <h5 class="card-title text-warning text-center">Superior <span class="text-danger">Plus</span></h5>
+                <div class="text-center m-3">
+                <a href="#!rooms/superiorplus" ng-class="{ active: isActive('/rooms/deluxe')}" class="btn btn-white border-dark">Dettagli</a>
+                </div>
+                <p class="card-text text-center"><small class="text-muted">Camera quadrupla, perfetta per una famiglia di 4 persone.</small></p>
+            </div>
+        </div>
+        <div class="card col-md-4 mt-4 superiorCard">
+            <a ng-class="{ active: isActive('/rooms/superior')}" href="#!rooms/superior"><img class="card-img-top" src="./assets/images/superior2bed.jpg" alt="superiorRoom.jpg"></a>
+            <div class="card-body">
+                <h5 class="card-title text-warning text-center">Superior</h5>
+                <div class="text-center m-3">
+                <a href="#!rooms/superior" ng-class="{ active: isActive('/rooms/deluxe')}" class="btn btn-white border-dark">Dettagli</a>
+                </div>
+                <p class="card-text text-center"><small class="text-muted">
+                    Camera quadrupla, perfetta per una famiglia di 4 persone.</small></p>
+            </div>
+        </div>
+    </div>
+</div>
