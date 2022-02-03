@@ -1,1 +1,1 @@
-# olimpia_residence_b&b
+# olimpia_residence_b&b in AngularJs
