@@ -12,7 +12,7 @@
 		$headers="From: ".$email;
 
 		if(mail($to, $subject, $message, $headers)){
-			header("Location: contact.html?EmailInviata");
+			header("Location: https://residenceolimpiacaserta.it/#!/contact");
 		}
 		else{
 			echo "Qualcosa è andato storto!";

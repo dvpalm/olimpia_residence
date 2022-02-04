@@ -37,6 +37,10 @@
     background-color: #DCA53C!important;
 }
 
+.isActive {
+    background-color: red;
+}
+
 /* FOOTER */
 
 
