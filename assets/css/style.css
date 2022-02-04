@@ -23,6 +23,12 @@
     object-fit: cover;
 }
 
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
 .text-warning {
     color: #FFA500!important;
 }
@@ -86,11 +92,18 @@ footer p {
     margin: 0 12px;
 }
 
+/* Index */ 
+
+.contenitore {
+    background-color: #EAEBE4;
+}
+
 
 /* Testimonials Index */
 
-.card {
-    border: none
+.testimonials {
+    background-color: #EAEBE4;
+    border: none;
 }
 
 .user-content p {
@@ -110,7 +123,18 @@ span.carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
 }
 
+.bi-star-fill {
+    color: #FFA500;
+}
+
 /* Rooms */
+
+.card-rooms {
+    border: 1px ;
+    background-color: #EAEBE4;
+
+}
+
 
 #imagetoprooms h1 {
     position: absolute;
@@ -175,12 +199,35 @@ span.carousel-control-prev-icon {
     background: url('../images/superiorplusbed.jpg') no-repeat center center/cover;
  }
 
+
+/* CONTACT PAGE */
+
+.contact_form {
+    padding-top: 100px;
+}
+
+.contact_form textarea {
+    resize: none;
+}
+
+.contact_form label {
+    padding: 10px;
+}
+
+.contact_form button {
+    
+}
+
 /* Responsive  */
 
 @media (max-width: 575px) {
     .carousel-item img {
         height: 400px;
         object-fit: cover;
+    }
+
+    .carousel-caption h1 {
+        font-size: 20px;
     }
 
     .navbar-toggler {
@@ -191,6 +238,7 @@ span.carousel-control-prev-icon {
         float: right;
         width: 20%;
         margin-right: 20px;
+        margin-top: 5px;
     }
 }
 

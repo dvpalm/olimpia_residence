@@ -1,7 +1,7 @@
 <div class="contenitore">
     
     <section>
-        <div id="indexCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="indexCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -15,27 +15,27 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/images/reception.jpg" class="d-block w-100" alt="reception.jpg">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-warning">Relax & Comfort</h5>
+                    <div class="carousel-caption">
+                        <h1 class="text-warning animate__animated animate__backInDown">Relax & Comfort</h1>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="assets/images/reggia.jpg" class="d-block w-100" alt="reggia.jpg">
     
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-warning">La residenza reale più grande al mondo</h5>
+                    <div class="carousel-caption">
+                        <h1 class="text-warning animate__animated animate__backInDown">La residenza reale più grande al mondo</h1>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="assets/images/pepeingrani.jpg" class="d-block w-100" alt="pepeingrani.jpg">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-warning">Le migliori pizzerie al mondo</h5>
+                    <div class="carousel-caption">
+                        <h1 class="text-warning animate__animated animate__backInDown">Le migliori pizzerie al mondo</h1>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="assets/images/sanleucio.jpg" class="d-block w-100" alt="sanleucio.jpg">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-warning">Panorami eccezionali</h5>
+                    <div class="carousel-caption">
+                        <h1 class="text-warning animate__animated animate__backInDown">Panorami eccezionali</h1>
                     </div>
                 </div>
             </div>
@@ -87,8 +87,8 @@
                     <p class="text-center text-success font-weight-bold">Parliamo la tua lingua!</p>
                     </p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-warning"><a ng-class="{ active: isActive('/contact')}" class="text-white"
-                                href="#!contact">CONTATTACI!</a></button>
+                        <a ng-class="{ active: isActive('/contact')}" class="text-white text-decoration-none btn btn-warning"
+                                href="#!contact">CONTATTACI</a>
                     </div>
                 </div>
             </div>
@@ -117,15 +117,12 @@
                         Tutte le camere sono dotate di <span class="font-weight-bold">aria condizionata</span>,
                         riscaldamento autonomo, kit asciugamani, connessione <span
                             class="font-weight-bold">WiFi-Free</span>, TV LCD, salotto comune e
-                        <span class="font-weight-bold">bagno privato</span>. Ogni mattina potrete gustare una <span
-                            class="text-success font-weight-bold">colazione</span><span class="text-secondary">
-                            all'</span><span class="font-weight-bold text-danger">Italiana</span> presso una
+                        <span class="font-weight-bold">bagno privato</span>. Ogni mattina potrete gustare una colazione all'Italiana presso una
                         caffetteria
                         nelle vicinanze.
                     </p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-warning"><a ng-class="{ active: isActive('/rooms')}" class="text-white" href="#!rooms">Vedi le
-                                camere!</a></button>
+                       <a ng-class="{ active: isActive('/rooms')}" class="text-decoration-none text-white btn btn-warning" href="#!rooms">VEDI LE CAMERE</a>
                     </div>
                 </div>
             </div>
@@ -133,14 +130,27 @@
     </section>
 
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid mt-5">
             <div class="row align-items-md-center">
-                <div class="col-12 col-md-6 text-center mt-5">
+
+                <div class="col-12 text-center my-4">
+                    <h1 class="text-warning">COME TROVARCI</h1>
+                </div>
+
+                <div class="col-12 col-md-3 text-center mt-5">
                     <i class="fas fa-map-marker-alt fa-3x text-danger"></i>
                     <h3>Dove ci troviamo</h3>
                     <p><b class="text-success">Caserta, Via San Giovanni n53</b><br>
                 </div>
-                <div class="col-12 col-md-6 text-center mt-5 ">
+
+                <div class="col-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4253.769237049939!2d14.329601664262755!3d41.071854465121206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc849bcd30e2581f2!2sOlimpia%20Residence!5e0!3m2!1sit!2sit!4v1590431802870!5m2!1sit!2sit"
+                        width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <div class="col-12 col-md-3 text-center mt-5 ">
                     <i class="fas fa-map-marker-alt fa-3x text-danger"></i>
                     <h3>Vicino a noi:</h3>
                     <br>
@@ -156,61 +166,53 @@
                     </p>
                 </div>
 
-                <div class="col-12">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4253.769237049939!2d14.329601664262755!3d41.071854465121206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc849bcd30e2581f2!2sOlimpia%20Residence!5e0!3m2!1sit!2sit!4v1590431802870!5m2!1sit!2sit"
-                        width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
-                </div>
+               
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
 
-    <div id="carouselExampleControls" class="carousel slide container-fluid" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade container-fluid py-5" data-bs-ride="carousel">
         <h1 class="text-warning text-center mt-4">DICONO DI NOI</h1>
-        <hr>
+        <hr class="container">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card p-3 text-center">
+            <div class="carousel-item active animate__animated animate__pulse">
+                <div class="card testimonials p-3 text-center">
                     <div class="user-image"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
                     <div class="user-content">
-                        <h5 class="mb-0">Rosanna</h5> <span>Lorem, ipsum dolor.</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h5 class="mb-0">Rita</h5>
+                        <p>«Struttura nuovissima e pulitissima. Ho pernottato con la mia famiglia. Parcheggio Marconi a 5 minuti. Reggia 7 minuti. Tutto a piedi. Ci ritornerò sicuramente»</p>
                     </div>
                     <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
                             class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="card p-3 text-center">
+            <div class="carousel-item animate__animated animate__pulse">
+                <div class="card testimonials p-3 text-center">
                     <div class="user-image"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> </div>
                     <div class="user-content">
-                        <h5 class="mb-0">Domy</h5> <span>Lorem, ipsum dolor.</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h5 class="mb-0">Chiarapia</h5>
+                        <p>«La struttura si trova in una posizione centrale, a pochi passi dalla Reggia. Dotata di tutti i comfort. 
+                            Il proprietario è stato molto accogliente e disponibile»</p>
                     </div>
                     <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
                             class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="card p-3 text-center">
+            <div class="carousel-item animate__animated animate__pulse">
+                <div class="card testimonials p-3 text-center">
                     <div class="user-image"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
                     <div class="user-content">
-                        <h5 class="mb-0">Icienz</h5> <span>Lorem, ipsum dolor.</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h5 class="mb-0">Stefano</h5>
+                        <p>Camera bellissima, comodissima e con tutti i confort a pochissimo in centro città e a pochissima distanza dalla Reggia. <br>
+                            Un luogo straconsigliatissimo, gentilezza e cortesia da parte dei gestori e, ripeto, con tutti i confort. 
+                            Colazione, se compresa, al bar in centro alla piazza del Duomo. Fantastico!</p>
                     </div>
                     <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
                             class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
