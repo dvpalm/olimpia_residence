@@ -270,14 +270,20 @@ span.carousel-control-prev-icon {
 @media (min-width: 768px) {
     .logo {
         width: 15%;
-        margin-left: 100px;
+        margin-left: 10px;
         float: initial;
+    }
+    .navbar-nav {
+        margin-left: -620px;
     }
 }
 
 @media (min-width: 920px) {
     .logo {
         width: 15%;
+    }
+    .navbar-nav {
+        margin-left: -550px;
     }
 }
 
@@ -290,6 +296,7 @@ span.carousel-control-prev-icon {
 
     .navbar-nav {
         margin-bottom: -20px;
+        margin-left: -430px;
     }
 }
 
@@ -299,6 +306,9 @@ span.carousel-control-prev-icon {
         width: 13%;
         margin-left: 100px;
     }
+    .navbar-nav {
+        margin-left: -280px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -306,10 +316,17 @@ span.carousel-control-prev-icon {
         width: 13%;
         margin-left: 110px;
     }
+    .navbar-nav {
+        margin-left: -90px;
+    }
 }
 
 @media (min-width: 1600px) {
     .logo {
         width: 13%;
+    }
+
+    .navbar-nav {
+        margin-left: 350px;
     }
 }
